@@ -214,3 +214,41 @@ header{
 .category:hover{
     box-shadow: 0 3rem 3rem rgba(0, 0, 0, 0.3);
 }
+
+
+
+
+
+.courses{
+    margin-top:10rem;
+}
+.container__courses{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 2rem;
+}
+.container__courses img{
+    height: 15rem;
+}
+.course{
+    position: relative;
+    padding-bottom: 8rem;
+    background-color: var(--color-bg1);
+    /* display: flex; */
+    text-align: center;
+    border: 1px solid transparent;
+    transition: var(--transition);
+}
+.course:hover{
+    background-color: transparent;
+    border-color: var(--color-primary);
+}
+.course h4{
+    margin: 1rem 0 2rem;
+}
+.course .btn{
+    position: absolute;
+    bottom: 2rem;
+    left: 50%;
+    transform: translateX(-50%);
+}
