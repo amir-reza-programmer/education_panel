@@ -252,3 +252,33 @@ header{
     left: 50%;
     transform: translateX(-50%);
 }
+
+
+
+.faqs_container{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 1rem;
+}
+.faq{
+    background-color: var(--color-primary);
+    padding: 1.5rem;
+    display: flex;
+    cursor: pointer;
+    height: fit-content;
+}
+.question__answer{
+    margin-right: 1rem;
+}
+.question__answer p{
+    margin-top: 1rem;
+    transition: var(--transition);
+    display: none;
+    /* height: 0;
+    visibility: hidden; */
+}
+.question__answer .answer__visible{
+    display: block;
+    /* height: fit-content;
+    visibility: visible; */
+}
